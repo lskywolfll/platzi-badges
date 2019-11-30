@@ -7,9 +7,10 @@
 // JSX Necesita react y react-dom
 import React from 'react';
 import ReactDOM from 'react-dom';
+import 'bootstrap/dist/css/bootstrap.css';
+import './global.css'
 // Componentes
 import Badge from './components/Badge';
-
 
 // JSX
 // const jsx = <h1>Hello, Platzi Badges from React!</h1>;
@@ -51,5 +52,5 @@ const container = document.getElementById('app');
 // )
 
 // ReactDOM.render(__qué__,__donde__)
-
+// Se aconseja que al renderear componentes los dejes dentro de una etiqueta con cierre ej: <componentName />
 ReactDOM.render(<Badge />, container);
