@@ -53,4 +53,13 @@ const container = document.getElementById('app');
 
 // ReactDOM.render(__qué__,__donde__)
 // Se aconseja que al renderear componentes los dejes dentro de una etiqueta con cierre ej: <componentName />
-ReactDOM.render(<Badge />, container);
+ReactDOM.render(
+<Badge 
+// Estas son las propiedades(props) del componente en el cual nos requiere tener un dato para poder pintarlo con ciertas cosas(data) y no a nivel de estilos
+firstName="René" 
+lastName="Sanchez"
+avatarUrl="https://i.imgur.com/lp2L0A7.jpg"
+jobTitle="Desarrollador Full Stack" 
+twitter="lReneNK" 
+/>, 
+container);
