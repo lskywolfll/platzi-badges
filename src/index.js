@@ -10,7 +10,9 @@ import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 import './global.css'
 // Componentes
-import Badge from './components/Badge';
+// import Badge from './components/Badge';
+// Paginas que contienen componentes
+import BadgeNew from './pages/BadgeNew';
 
 // JSX
 // const jsx = <h1>Hello, Platzi Badges from React!</h1>;
@@ -29,13 +31,13 @@ import Badge from './components/Badge';
 
 // const jsx = <h1>Hola soy, {name}</h1>
 
-const element = (
-    <div>
-        <h1>Hola, Soy Rene</h1>
-        <p>Soy Desarrollador Full Stack</p>
-    </div>
-)
-
+// const element = (
+//     <div>
+//         <h1>Hola, Soy Rene</h1>
+//         <p>Soy Desarrollador Full Stack</p>
+//     </div>
+// )
+// Contenedor o donde se agregara el componente que nosotros queremos agregarle osea es adonde apuntara la flecha, es la direccion donde nosotros vamos a apuntar
 const container = document.getElementById('app');
 
 // Es una forma de crear vistas con javascript de manera mas sencilla, ya que al fin al cabo estamos creando React.createElement por detras al usar JSX por babel y webpack
@@ -52,14 +54,17 @@ const container = document.getElementById('app');
 // )
 
 // ReactDOM.render(__qué__,__donde__)
+
 // Se aconseja que al renderear componentes los dejes dentro de una etiqueta con cierre ej: <componentName />
-ReactDOM.render(
-<Badge 
-// Estas son las propiedades(props) del componente en el cual nos requiere tener un dato para poder pintarlo con ciertas cosas(data) y no a nivel de estilos
-firstName="René" 
-lastName="Sanchez"
-avatarUrl="https://i.imgur.com/lp2L0A7.jpg"
-jobTitle="Desarrollador Full Stack" 
-twitter="lReneNK" 
-/>, 
-container);
+// ReactDOM.render(
+// <Badge 
+// // Estas son las propiedades(props) del componente en el cual nos requiere tener un dato para poder pintarlo con ciertas cosas(data) y no a nivel de estilos
+// firstName="René" 
+// lastName="Sanchez"
+// avatarUrl="https://i.imgur.com/lp2L0A7.jpg"
+// jobTitle="Desarrollador Full Stack" 
+// twitter="lReneNK" 
+// />, 
+// container);
+
+ReactDOM.render(<BadgeNew />, container);
