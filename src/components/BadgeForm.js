@@ -3,11 +3,11 @@ import React from 'react';
 class BadgeForm extends React.Component{
     // Contenedor de estados para controlarlos
     state = {
-        firstName: '',
-        lastName: '',
-        jobTitle: '',
-        email: '',
-        twitter: '@'
+        // firstName: '',
+        // lastName: '',
+        // jobTitle: '',
+        // email: '',
+        // twitter: '@'
     };
 
     // Capturador del evento de un cambio en el input

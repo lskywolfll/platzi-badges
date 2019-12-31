@@ -15,9 +15,8 @@ class BadgeNew extends React.Component{
 
     handleChange = e => {
         this.setState({
-            form: {
-                [e.target.name]: e.target.value,
-            },
+            ...this.state.form,
+            [e.target.name]: e.target.value,
         });
     };
 
