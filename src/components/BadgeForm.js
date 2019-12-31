@@ -52,7 +52,7 @@ class BadgeForm extends React.Component{
 
                     <div className="form-group">
                         <label>Job Title</label>
-                        <input onChange={this.handleChange} className="form-control" type="text" name="fobTitle" placeholder="Apellido"></input>
+                        <input onChange={this.handleChange} className="form-control" type="text" name="jobTitle" placeholder="Cargo" value={this.state.jobTitle}></input>
                     </div>
 
                     <div className="form-group">
