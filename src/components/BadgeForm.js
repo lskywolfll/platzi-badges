@@ -49,6 +49,10 @@ class BadgeForm extends React.Component{
                         <input onChange={this.handleChange} className="form-control" type="email" name="Email"></input>
                     </div>
 
+                    <div className="form-group">
+                        <label>Twitter</label>
+                        <input onChange={this.handleChange} className="form-control" type="email" name="Twitter">@</input>
+                    </div>
                     {/*1- Forma 
                     
                     Para sacar el problema del submit que pasa recurrentemente al tener un boton dentro de un form
