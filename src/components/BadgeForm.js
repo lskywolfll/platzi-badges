@@ -9,7 +9,7 @@ class BadgeForm extends React.Component{
         // });
 
         this.setState({
-            firstName: e.target.value,
+            [e.target.name]: e.target.value,
         });
     };
     // Capturador del evento click
@@ -36,23 +36,23 @@ class BadgeForm extends React.Component{
                 <form onSubmit={this.handleSubmit}>
                     <div className="form-group">
                         <label>First Name</label>
-                        <input onChange={this.handleChange} className="form-control" type="text" name="firstName"></input>
+                        <input onChange={this.handleChange} className="form-control" type="text" name="firstName" placeholder="Nombre"></input>
                     </div>
 
-                    <div className="form-group">
+                    {/* <div className="form-group">
                         <label>Last Name</label>
-                        <input onChange={this.handleChange} className="form-control" type="text" name="LastName"></input>
+                        <input onChange={this.handleChange} className="form-control" type="text" name="LastName" placeholder="Apellido"></input>
                     </div>
 
                     <div className="form-group">
                         <label>Email</label>
-                        <input onChange={this.handleChange} className="form-control" type="email" name="Email"></input>
+                        <input onChange={this.handleChange} className="form-control" type="email" name="Email" placeholder="Correo"></input>
                     </div>
 
                     <div className="form-group">
                         <label>Twitter</label>
-                        <input onChange={this.handleChange} className="form-control" type="email" name="Twitter">@</input>
-                    </div>
+                        <input onChange={this.handleChange} className="form-control" type="text" name="Twitter" placeholder="@usuario"></input>
+                    </div> */}
                     {/*1- Forma 
                     
                     Para sacar el problema del submit que pasa recurrentemente al tener un boton dentro de un form
