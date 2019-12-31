@@ -62,7 +62,7 @@ class BadgeForm extends React.Component{
 
                     <div className="form-group">
                         <label>Twitter</label>
-                        <input onChange={this.handleChange} className="form-control" type="text" name="twitter" placeholder="@usuario"></input>
+                        <input onChange={this.handleChange} className="form-control" type="text" name="twitter" placeholder="@usuario" value={this.state.twitter}></input>
                     </div>
                     {/*1- Forma 
                     
