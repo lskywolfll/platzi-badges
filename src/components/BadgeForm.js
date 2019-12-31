@@ -1,6 +1,11 @@
 import React from 'react';
 
 class BadgeForm extends React.Component{
+    // Contenedor de estados para controlarlos
+    state = {
+
+    };
+
     // Capturador del evento de un cambio en el input
     handleChange = e => {
         // console.log({
@@ -37,27 +42,27 @@ class BadgeForm extends React.Component{
                 <form onSubmit={this.handleSubmit}>
                     <div className="form-group">
                         <label>First Name</label>
-                        <input onChange={this.handleChange} className="form-control" type="text" name="FirstName" placeholder="Nombre"></input>
+                        <input onChange={this.handleChange} className="form-control" type="text" name="firstName" placeholder="Nombre" value={this.state.firstName}></input>
                     </div>
 
                     <div className="form-group">
                         <label>Last Name</label>
-                        <input onChange={this.handleChange} className="form-control" type="text" name="LastName" placeholder="Apellido"></input>
+                        <input onChange={this.handleChange} className="form-control" type="text" name="fastName" placeholder="Apellido"></input>
                     </div>
 
                     <div className="form-group">
                         <label>Job Title</label>
-                        <input onChange={this.handleChange} className="form-control" type="text" name="JobTitle" placeholder="Apellido"></input>
+                        <input onChange={this.handleChange} className="form-control" type="text" name="fobTitle" placeholder="Apellido"></input>
                     </div>
 
                     <div className="form-group">
                         <label>Email</label>
-                        <input onChange={this.handleChange} className="form-control" type="email" name="Email" placeholder="Correo"></input>
+                        <input onChange={this.handleChange} className="form-control" type="email" name="email" placeholder="Correo"></input>
                     </div>
 
                     <div className="form-group">
                         <label>Twitter</label>
-                        <input onChange={this.handleChange} className="form-control" type="text" name="Twitter" placeholder="@usuario"></input>
+                        <input onChange={this.handleChange} className="form-control" type="text" name="twitter" placeholder="@usuario"></input>
                     </div>
                     {/*1- Forma 
                     
