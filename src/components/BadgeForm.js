@@ -26,6 +26,7 @@ class BadgeForm extends React.Component{
     handleSubmit = e => {
        e.preventDefault();
        console.log('El submit se ha activado!');
+       console.log(this.state);
     };
 
     render(){
