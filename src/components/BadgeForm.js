@@ -47,27 +47,27 @@ class BadgeForm extends React.Component{
                 <form onSubmit={this.handleSubmit}>
                     <div className="form-group">
                         <label>First Name</label>
-                        <input onChange={this.props.onChange} className="form-control" type="text" name="firstName" placeholder="Nombre" value={this.state.firstName}></input>
+                        <input onChange={this.props.onChange} className="form-control" type="text" name="firstName" placeholder="Nombre" value={this.props.formValues.firstName}></input>
                     </div>
 
                     <div className="form-group">
                         <label>Last Name</label>
-                        <input onChange={this.props.onChange} className="form-control" type="text" name="lastName" placeholder="Apellido" value={this.state.lastName}></input>
+                        <input onChange={this.props.onChange} className="form-control" type="text" name="lastName" placeholder="Apellido" value={this.props.formValues.lastName}></input>
                     </div>
 
                     <div className="form-group">
                         <label>Job Title</label>
-                        <input onChange={this.props.onChange} className="form-control" type="text" name="jobTitle" placeholder="Cargo" value={this.state.jobTitle}></input>
+                        <input onChange={this.props.onChange} className="form-control" type="text" name="jobTitle" placeholder="Cargo" value={this.props.formValues.jobTitle}></input>
                     </div>
 
                     <div className="form-group">
                         <label>Email</label>
-                        <input onChange={this.props.onChange} className="form-control" type="email" name="email" placeholder="Correo" value={this.state.email}></input>
+                        <input onChange={this.props.onChange} className="form-control" type="email" name="email" placeholder="Correo" value={this.props.formValues.email}></input>
                     </div>
 
                     <div className="form-group">
                         <label>Twitter</label>
-                        <input onChange={this.props.onChange} className="form-control" type="text" name="twitter" placeholder="@usuario" value={this.state.twitter}></input>
+                        <input onChange={this.props.onChange} className="form-control" type="text" name="twitter" placeholder="@usuario" value={this.props.formValues.twitter}></input>
                     </div>
                     {/*1- Forma 
                     
