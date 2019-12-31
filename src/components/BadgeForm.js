@@ -9,6 +9,7 @@ class BadgeForm extends React.Component{
         // });
 
         this.setState({
+            // Toma el evento respectivo y se le asigna su valor tener en mente que el objeto tendra el nombre de propiedad que le hayas dado a la etiqueta
             [e.target.name]: e.target.value,
         });
     };
