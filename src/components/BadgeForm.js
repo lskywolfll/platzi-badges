@@ -11,17 +11,17 @@ class BadgeForm extends React.Component{
     };
 
     // Capturador del evento de un cambio en el input
-    handleChange = e => {
-        // console.log({
-        //     name: e.target.name,
-        //     value: e.target.value
-        // });
+    // handleChange = e => {
+    //     // console.log({
+    //     //     name: e.target.name,
+    //     //     value: e.target.value
+    //     // });
 
-        this.setState({
-            // Toma el evento respectivo y se le asigna su valor tener en mente que el objeto tendra el nombre de propiedad que le hayas dado a la etiqueta
-            [e.target.name]: e.target.value,
-        });
-    };
+    //     this.setState({
+    //         // Toma el evento respectivo y se le asigna su valor tener en mente que el objeto tendra el nombre de propiedad que le hayas dado a la etiqueta
+    //         [e.target.name]: e.target.value,
+    //     });
+    // };
     // Capturador del evento click
     handleClick = e => {
         console.log('El boton ha sido clickeado');
@@ -47,22 +47,22 @@ class BadgeForm extends React.Component{
                 <form onSubmit={this.handleSubmit}>
                     <div className="form-group">
                         <label>First Name</label>
-                        <input onChange={this.handleChange} className="form-control" type="text" name="firstName" placeholder="Nombre" value={this.state.firstName}></input>
+                        <input onChange={this.handleChange} className="form-control" type="text" name="firstName" placeholder="Nombre" value={this.props.onChange}></input>
                     </div>
 
                     <div className="form-group">
                         <label>Last Name</label>
-                        <input onChange={this.handleChange} className="form-control" type="text" name="lastName" placeholder="Apellido" value={this.state.lastName}></input>
+                        <input onChange={this.handleChange} className="form-control" type="text" name="lastName" placeholder="Apellido" value={this.props.onChange}></input>
                     </div>
 
                     <div className="form-group">
                         <label>Job Title</label>
-                        <input onChange={this.handleChange} className="form-control" type="text" name="jobTitle" placeholder="Cargo" value={this.state.jobTitle}></input>
+                        <input onChange={this.handleChange} className="form-control" type="text" name="jobTitle" placeholder="Cargo" value={this.props.onChange}></input>
                     </div>
 
                     <div className="form-group">
                         <label>Email</label>
-                        <input onChange={this.handleChange} className="form-control" type="email" name="email" placeholder="Correo" value={this.state.email}></input>
+                        <input onChange={this.handleChange} className="form-control" type="email" name="email" placeholder="Correo" value={this.props.onChange}></input>
                     </div>
 
                     <div className="form-group">
