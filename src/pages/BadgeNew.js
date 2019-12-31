@@ -15,8 +15,17 @@ class BadgeNew extends React.Component{
 
     handleChange = e => {
         this.setState({
-            ...this.state.form,
-            [e.target.name]: e.target.value,
+            // 1- Primera Solucion para el no sobreescribimiento de los estados y eliminando los anteriores
+            // ...this.state.form,
+            // [e.target.name]: e.target.value,
+            // 2- Forma mejor ya que este copia y lo deja dentro del objeto del estado y no como el otro del primero que efectivamente se tiene el form pero vacio literalmente pero con las demas propieades a usar
+            form : {
+                ...this.state.form,
+                [e.target.name]: e.target.value,
+            }
+            // 3- forma
+            // const nextForm = this.state.form;
+            // nextForm[e.target.name] = e.target.value;
         });
     };
 
