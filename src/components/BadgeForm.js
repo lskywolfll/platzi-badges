@@ -3,9 +3,13 @@ import React from 'react';
 class BadgeForm extends React.Component{
     // Capturador del evento de un cambio en el input
     handleChange = e => {
-        console.log({
-            name: e.target.name,
-            value: e.target.value
+        // console.log({
+        //     name: e.target.name,
+        //     value: e.target.value
+        // });
+
+        this.setState({
+            firstName: e.target.value,
         });
     };
     // Capturador del evento click
